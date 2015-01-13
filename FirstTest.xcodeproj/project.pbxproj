@@ -13,6 +13,8 @@
 		72529EF71A0E35CB00C62E49 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72529EF61A0E35CB00C62E49 /* Images.xcassets */; };
 		72529EFA1A0E35CB00C62E49 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72529EF81A0E35CB00C62E49 /* LaunchScreen.xib */; };
 		72529F061A0E35CB00C62E49 /* FirstTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72529F051A0E35CB00C62E49 /* FirstTestTests.swift */; };
+		725B23361A1C0DA30089DB25 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 725B23351A1C0DA30089DB25 /* CoreLocation.framework */; };
+		725B23381A1C0DB80089DB25 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 725B23371A1C0DB80089DB25 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		72529EFF1A0E35CB00C62E49 /* FirstTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72529F041A0E35CB00C62E49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72529F051A0E35CB00C62E49 /* FirstTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTestTests.swift; sourceTree = "<group>"; };
+		725B23351A1C0DA30089DB25 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		725B23371A1C0DB80089DB25 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				725B23381A1C0DB80089DB25 /* MapKit.framework in Frameworks */,
+				725B23361A1C0DA30089DB25 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				72529EEC1A0E35CB00C62E49 /* FirstTest */,
+				725B23341A1C0D410089DB25 /* Frameworks */,
 				72529F021A0E35CB00C62E49 /* FirstTestTests */,
 				72529EEB1A0E35CB00C62E49 /* Products */,
 			);
@@ -112,6 +119,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		725B23341A1C0D410089DB25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				725B23371A1C0DB80089DB25 /* MapKit.framework */,
+				725B23351A1C0DA30089DB25 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -161,6 +177,7 @@
 				TargetAttributes = {
 					72529EE91A0E35CB00C62E49 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 79M59YBPJ7;
 					};
 					72529EFE1A0E35CB00C62E49 = {
 						CreatedOnToolsVersion = 6.1;
@@ -405,6 +422,7 @@
 				72529F0B1A0E35CB00C62E49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		72529F0C1A0E35CB00C62E49 /* Build configuration list for PBXNativeTarget "FirstTestTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +431,7 @@
 				72529F0E1A0E35CB00C62E49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
